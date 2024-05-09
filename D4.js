@@ -114,12 +114,24 @@ console.log(reverseString("EPICODE"));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function upperFirst(stringa3) {
+  let splitted = stringa3.splitted(" ");
+  for (let i = 0; i < splitted.length; i++) {
+    splitted[i] = splitted[i].cha;
+  }
+}
+
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function cutString(altraStringa) {
+  return altraStringa.slice(1, -1);
+}
+console.log(cutString("EPICODE"));
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
