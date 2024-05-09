@@ -142,5 +142,11 @@ console.log(cutString("EPICODE"));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 function giveMeRandom(n) {
-  let numberRandom;
+  let numberRandom = [];
+  n = numberRandom;
+  return numberRandom.push(Math.floor(Math.random() * 11));
 }
+
+const numRan = giveMeRandom();
+console.log(numRan);
+console.log(numRan);
