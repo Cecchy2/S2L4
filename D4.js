@@ -115,11 +115,14 @@ console.log(reverseString("EPICODE"));
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function upperFirst(stringa3) {
-  let splitted = stringa3.splitted(" ");
-  for (let i = 0; i < splitted.length; i++) {
-    splitted[i] = splitted[i].cha;
+  let wordsString = stringa3.split(" ");
+  console.log(wordsString);
+  for (let i = 0; i < wordsString.length; i++) {
+    wordsString[i] = wordsString[i].charAt(0).toUpperCase();
   }
+  return wordsString.join();
 }
+console.log(upperFirst("ciao a tutti"));
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
@@ -138,3 +141,6 @@ console.log(cutString("EPICODE"));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function giveMeRandom(n) {
+  let numberRandom;
+}
