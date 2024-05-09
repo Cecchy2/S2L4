@@ -102,7 +102,7 @@ check3and7(87578575);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function reverseString(stringa2) {
-  return stringa2.split("").reverse();
+  return stringa2.split("").reverse().join("");
 }
 
 console.log(reverseString("EPICODE"));
@@ -118,9 +118,9 @@ function upperFirst(stringa3) {
   let wordsString = stringa3.split(" ");
   console.log(wordsString);
   for (let i = 0; i < wordsString.length; i++) {
-    wordsString[i] = wordsString[i].charAt(0).toUpperCase();
+    wordsString[i] = wordsString[i].charAt(0).toUpperCase() + wordsString[i].slice(1);
   }
-  return wordsString.join();
+  return wordsString;
 }
 console.log(upperFirst("ciao a tutti"));
 
