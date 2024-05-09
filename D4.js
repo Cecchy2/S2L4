@@ -35,12 +35,12 @@ console.log(crazySum(3, 6));
 
 function crazyDiff(num1) {
   if (num1 > 19) {
-    return (num1 - 19) * 3;
+    return Math.abs(num1 - 19) * 3;
   } else {
-    return num1 - 19;
+    return Math.abs(num1 - 19);
   }
 }
-console.log(crazyDiff(20));
+console.log(crazyDiff(14));
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
@@ -100,6 +100,8 @@ check3and7(87578575);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function reverseString() {}
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
