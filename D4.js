@@ -81,6 +81,20 @@ console.log(epify("EPICODE esercizio numero 5"));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function check3and7(numPositivo) {
+  if (numPositivo >= 0)
+    if (numPositivo >= 0 && numPositivo % 3 === 0) {
+      console.log("il numero è multiplo di 3");
+    } else if (numPositivo >= 0 && numPositivo % 7 === 0) {
+      console.log("il numero è multiplo di 7");
+    } else if (numPositivo < 0) {
+      console.log("il numero è negativo");
+    } else {
+      console.log("il numero non è multiplo ne di 3 ne di 7");
+    }
+}
+check3and7(87578575);
+
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
