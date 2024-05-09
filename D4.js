@@ -101,7 +101,11 @@ check3and7(87578575);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-function reverseString() {}
+function reverseString(stringa2) {
+  return stringa2.split("").reverse();
+}
+
+console.log(reverseString("EPICODE"));
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
